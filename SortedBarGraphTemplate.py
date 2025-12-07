@@ -9,7 +9,14 @@ def sort(a):
     return
 
 def readData():
-    for my
+     myList = []
+    file_name = input()
+    lines = file_name.readlines()
+    i = 0
+    for i in lines:
+        myList.append(lines[i])
+    for myList[i] in range(len(myList)):
+        myList[i] = int(myList[i])
     
     #read the data into myList
     #Use open() and readlines()
@@ -19,15 +26,10 @@ def readData():
     return myList
 
 def main():
-    myList = []
-    file_name = input()
-    lines = file_name.readlines()
-    i = 0
-    for i in lines:
-        myList.append(lines[i])
-    for myList[i] in range(len(myList)):
-        print(myList[i])
-    readData()
+    print(readData())
+    print(myList.sort())
+    
+    
     #get data list from readData()
 
     #print the list of data to the console window
@@ -55,3 +57,4 @@ def main():
 
 if __name__ == "__main__":
     main()
+
