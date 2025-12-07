@@ -34,15 +34,15 @@ def main():
     #print the list of data to the console window
  
     maxheight = max(data_values)
-    num_bars = len(data_values)
+    numBars = len(data_values)
     
     #find numbars
 
     screen = Screen()
     #screen.setworldcoordinates(?,?,?,?)
-    screen.setworldcoordinates(0,0, (40*num_bars), maxheight)
+    screen.setworldcoordinates(0,0, (40*numBars), maxheight)
     speed('fastest')
-    for i in range(num_bars):
+    for i in range(numBars):
         drawBar(data_value[i])
     #draw a bar for each element in the data list
     
@@ -52,14 +52,14 @@ def main():
     
     reset()
     speed('fastest')
-     for myList[i] in range(len(myList()):
-        drawBar(myList[i])
+     
     #draw a bar for each element in the data list (again)
 
     screen.exitonclick()
 
 if __name__ == "__main__":
     main()
+
 
 
 
