@@ -9,13 +9,14 @@ def drawBar(height):
     return
 
 def readData():
-     myList = []
+    myList = []
     file_name = input()
     lines = file_name.readlines()
     i = 0
     for i in lines:
         myList.append(lines[i])
-    for myList[i] in range(len(myList)):
+        i = i +1 
+    for len(myList) in range(len(myList)):
         myList[i] = int(myList[i])
     #read the data into myList
     #Use open() and readlines()
@@ -61,5 +62,6 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
