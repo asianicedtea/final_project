@@ -7,6 +7,7 @@ def drawBar(height):
     right(90)
     forward(height)
     left(180)
+    begin_fill()
     
     #draw one bar of the specified height
     #turtle will start where the last bar left off
@@ -47,18 +48,23 @@ def main():
     #draw a bar for each element in the data list
     
     #sort the list
+    new_data = data_values.sort()
+    for i in range(len(new_data)):
+        print(new_data[i])
 
     #print the sorted list to the console window
     
     reset()
     speed('fastest')
-     
+    for i in range(numBars):
+        drawBar(new_data[i])
     #draw a bar for each element in the data list (again)
 
     screen.exitonclick()
 
 if __name__ == "__main__":
     main()
+
 
 
 
