@@ -23,7 +23,9 @@ def readData():
     return data_list
 
 def main():
-    print(readData())
+    data_values = readData()
+    for i in range(len(data_values)):
+        print(data_values[i])
     #get data list from readData()
     #print the list of data to the console window
  
@@ -59,6 +61,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
