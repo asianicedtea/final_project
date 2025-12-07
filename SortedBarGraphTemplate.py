@@ -1,9 +1,13 @@
 from turtle import *
 
 def drawBar(height):
-    turtle.forward(40)
-    turtle.left(90)
-    turtle.forward(height)
+    forward(height)
+    right(90)
+    forward(40)
+    right(90)
+    forward(height)
+    left(180)
+    
     #draw one bar of the specified height
     #turtle will start where the last bar left off
     return
@@ -29,24 +33,19 @@ def main():
     #get data list from readData()
     #print the list of data to the console window
  
-    maxHeight = 0
-    for myList[i] in range(len(myList)):
-        if myList[i] >=maxHeight:
-            maxHeight = myList[i]
-        else:
-            maxHeight = maxHeight
-    numbars = len(myList)
+    maxheight = max(data_values)
+    num_bars = len(data_values)
     
     #find numbars
 
     screen = Screen()
     #screen.setworldcoordinates(?,?,?,?)
-    screen.setworldcoordinates((40*numbars),(40*numbars), maxHeight, maxHeight)
+    screen.setworldcoordinates(0,0, (40*num_bars), maxheight)
     speed('fastest')
-    for myList[i] in range(len(myList()):
-        drawBar(myList[i])
+    for i in range(num_bars):
+        drawBar(data_value[i])
     #draw a bar for each element in the data list
-    print(myList.sort())
+    
     #sort the list
 
     #print the sorted list to the console window
@@ -61,6 +60,7 @@ def main():
 
 if __name__ == "__main__":
     main()
+
 
 
 
